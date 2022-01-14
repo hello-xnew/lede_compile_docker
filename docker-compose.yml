@@ -1,0 +1,9 @@
+version: '3'
+services:
+  lede:
+    container_name: lede
+    #    image: dev_tools_web
+    build: ./ubuntu/
+    restart: always
+    volumes:
+      - "./lede:/lede"
